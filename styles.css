@@ -14,7 +14,7 @@
     --first-color-darken: #290f09;
     --text-color: #54423d;
     --first-color-light: #eae7e6;
-    --first-colr-lighten: #fffafa;
+    --first-color-lighten: #fffafa;
 
     /* font and typpograhy  */
     --body-font: 'Poppins', sans-serif;
@@ -45,4 +45,48 @@
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
     }
+}
+
+/* base  */
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color-lighten);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+h3{
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
