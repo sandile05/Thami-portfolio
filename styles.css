@@ -191,3 +191,7 @@ img{
 .show{
     left: 0;
 }
+
+.active{
+    color: var(--text-color);
+}
