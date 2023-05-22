@@ -399,3 +399,67 @@ img{
 .project__data button:hover{
     color: var(--first-color-lighten);
 }
+
+
+/* media queries  */
+
+@media screen and (min-width: 768px){
+    .home__button{
+        width: initial;
+    }
+
+    .nav__menu{
+        width: var(--nav-width);
+    }
+
+    .nav__menu{
+        width: var(--nav-width);
+    }
+
+    .about__container,
+    .services__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__data{
+        text-align: initial;
+    }
+
+    .about__description{
+        margin-bottom: var(--mb-5);
+    }
+
+    .about__img{
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        margin: 0;
+        padding-left: var(--nav-width);
+    }
+
+    .l-header{
+        width: 0;
+    }
+
+    .nav__toggle, .nav__logo, .nav__close{
+        display: none;
+    }
+    .nav__menu{
+        left: 0;
+    }
+
+    .home__container{
+        height: 100vh;
+    }
+
+    .section{
+        padding: 3rem 0 2rem;
+    }
+
+    .services__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
